@@ -1,9 +1,3 @@
-/*
-	Stellar by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
-
 (function($) {
 
 	var	$window = $(window),
@@ -115,7 +109,14 @@
 
 		}
 
-	// Scrolly.
+		let btn = document.querySelector("button");
+
+		btn.addEventListener("click", active);
+
+		function active() {
+		  btn.classList.toggle("is_active");
+		}
+		
 		$('.scrolly').scrolly({
 			speed: 1000
 		});
